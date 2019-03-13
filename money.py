@@ -1,3 +1,4 @@
+import json
 x = input("Ingresa la cantidad:")
 renta = x*0.25
 servicios = x*0.15
@@ -9,3 +10,19 @@ print "Servicios","$", servicios
 print "Comida","$", comida
 print "Tareas","$", tareas
 print "Diversion","$", diversion
+
+# a Python object (dict):
+x = {
+  "rent": renta,
+  "servicios": servicios,
+  "comida": comida,
+  "tareas": tareas,
+  "diversion": diversion,
+}
+
+# convert into JSON:
+y = json.dumps(x)
+
+# the result is a JSON string:
+print(y)
+
