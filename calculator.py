@@ -32,19 +32,21 @@ def divide():
 #This function is to elevate a number to the power of a number
 def power():
     x = input ("Type base number: ")
-    y = input ("Type power number 2: ")
-    print ("The result is:"), x ^ y
+    y = input ("Type power number: ")
+    print ("The result is:"), x ** y
 
 #This function is to convert Farenheit to Celsius
 def convert():
     x = input ("Type temperature in Farentheit: ")
-    print x - 32 * 5 / 9
+    print (x - 32) * 5 / 9
 
 #This function is to calculate the sales tax
 def salesTax():
-    x = input ("Type subtotal: ")
-    y = input ("Type tax in %: ")
-    print x * 1+(y/100)
+    x = float (input ("Type subtotal: $"))
+    y = float (input ("Type tax in %: "))
+    tax = x * (y/100)
+    print ("Tax is: $"), tax
+    print ("Total price is: $"), x + tax
 
 #This function is to calculate the income tax
 def incomeTax():
@@ -54,7 +56,7 @@ def incomeTax():
         print "You don't have to pay taxes."
     else:
         (x-y)*.3
-        
+
 #Menu
 print (30 * '-')
 print ("Welcome to the Python Calculator")
@@ -90,5 +92,6 @@ if selection == 8:
     incomeTax()
 
 if selection == 9:
+    print ("Goodbye")
     exit()
 
