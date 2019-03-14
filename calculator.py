@@ -44,9 +44,17 @@ def convert():
 def salesTax():
     x = input ("Type subtotal: ")
     y = input ("Type tax in %: ")
-    print x * (1+(y/100)
+    print x * 1+(y/100)
 
-    
+#This function is to calculate the income tax
+def incomeTax():
+    x = input ("Type anual income: $")
+    y = input ("Type anual outcome: $")
+    if y > x:
+        print "You don't have to pay taxes."
+    else:
+        (x-y)*.3
+        
 #Menu
 print (30 * '-')
 print ("Welcome to the Python Calculator")
