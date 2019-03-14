@@ -3,7 +3,9 @@
 #@Version: 1.0
 #@Date: 13/03/19
 
-#This Python script is a calculator that can add, subtract, multiply, divide, convert celcius to farenheit, calculate the income tax and the sales tax.
+#This Python script is a calculator that can: 
+#add, subtract, multiply, divide, 
+#convert celcius to farenheit, calculate the income tax and the sales tax.
 
 #This function is for adding two numbers
 def add():
@@ -65,7 +67,7 @@ def main():
     print (40 * '-')
     print ("1. Addition\n2. Substraction\n3. Multiplication\n4. Division\n5. Power to\n6. Convert Farenheit to Celcuis\n7. Calculate the sale tax\n8. Calculate the income tax\n9. Exit")
     print ("\n")
-    selection = input("Insert option:")
+    selection = input("Type number option:")
     
     #Conditionals
     if selection == 1:
