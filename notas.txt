@@ -1,0 +1,77 @@
+Banco del Emprendimiento
+El siguiente proyecto ha de realizarse en parejas.
+Una empresa nueva ha surgido para vincularse en el semestre i de Business Intelligence, pero en esta ocasión, y a sabiendas de su basto conocimiento en Python, ha pedido que los alumnos le ayuden a desarrollar un primer prototipo de software para un cajero automático.
+Su misión es escribir un programa en Python que simule el menú al que un usuario accedería para poder retirar y depositar dinero de su cuenta bancaria.
+Para lo anterior, deberás crear algunos elementos obligatorios en tu programa:
+1. Variables para los nombres de los cuentahabientes que deberá almacenar los nombres de 4 usuarios que se han predefinido para probar tu aplicación: Álvaro, Cecilia, Caro y Ulises
+2. Una lista, llamada NIP donde se guardarán los números de seguridad
+de cada uno de los usuarios anteriores:
+a. Álvaro:2222 b. Cecilia:3333 c. Caro:4444 d. Ulises5555
+3. Variables para los saldos donde se almacenarán los montos de las cuentas bancarias de cada usuario, con las siguientes cantidades:
+a. Álvaro:$5,000.00 b. Cecilia:$4,000.00 c. Caro:$3,000.00
+d. Ulises:$10,000.00
+Tu trabajo es desarrollar un Menú para el programa que se mostrará en el cajero automático. El funcionamiento del menú será como se describe:
+Lo primero que se deberá hacer es solicitar al usuario que ingrese su nombre. El sistema deberá buscar ese nombre en la lista de cuentahabientes. Si el nombre no existe, deberá indicarle al usuario un mensaje de error, y pedirle que intente de nuevo. Si el usuario existe, el
+sistema pedirá al usuario que ingrese su NIP. Si el NIP es correcto, se podrá continuar. Si no, le mostrará un error y deberá regresar al inicio del menú.
+En el siguiente punto del programa, se preguntará al usuario que desea hacer entre tres opciones:
+• Consultar su saldo
+• Retirar dinero
+• Depositar dinero • Salir
+Si el usuario elige salir, se dará por terminada la sesión del usuario, regresando al inicio del menú.
+Si el usuario selecciona la opción consultar saldo, se le mostrará el saldo en su cuenta, de acuerdo a la lista de saldos generada.
+Si el usuario elige la opción depositar dinero, el sistema preguntará cuánto dinero desea depositar. El sistema agregará dicha cantidad a la cuenta del beneficiario.
+Si el usuario elige la opción retirar dinero, el sistema preguntará cuánto dinero desea retirar. Una vez ingresada la cantidad, el sistema deberá validar que hay saldo suficiente en la cuenta. En caso de que exista suficiente dinero, mostrará un mensaje en pantalla indicando al usuario que su dinero fue entregado, se actualizará el saldo del usuario, y se dará por terminada la sesión del usuario, regresando al inicio del menú.
+Si no hay suficiente dinero, se le indicará al usuario que no hay suficientes fondos, y se le pedirá que ingrese una nueva cantidad. Así hasta que el usuario ingrese una cantidad válida, o cancele el proceso. Si cancela el retiro, regresará al menú de opciones para el usuario.
+
+Parte en Equipo con sus equipos base de proyectos
+Genera el Algoritmo y el diagrama de flujo para resolver el problema anterior.
+Fecha límite de entrega:
+Rúbrica
+Domingo 17 de enero, 11:55 pm
+Parte en parejas
+Concepto
+ 
+Ponderación
+Se validan de forma correcta los usuarios.
+ 
+10
+ 
+Se valida de forma correcta el PIN del usuario.
+10
+Se inicia de forma correcta el saldo del usuario.
+10
+Se puede consultar el saldo del usuario
+ 
+10
+Se puede “depositar” en la cuenta
+ 
+10
+ 
+Se puede hacer el “retiro” de dinero
+20
+Se muestra el menú de opciones de forma correcta
+10
+ 
+Se muestra la opción de login de forma correcta
+10
+Las variables y funciones tienen nombres significativos
+ 
+5
+Se comentaron de forma adecuada las funciones y el código en general
+ 
+5
+TOTAL
+ 
+100
+ 
+Parte en equipos
+Concepto
+ 
+Ponderación
+Algoritmo
+30
+Diagrama de flujo
+ 
+70
+TOTAL
+100

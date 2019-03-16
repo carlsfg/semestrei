@@ -3,8 +3,8 @@ import datetime
 now = datetime.datetime.now()
 
 #Variables
-names = ["Isra", "Cecilia", "Caro", "Ulises"]
-completeNames = ["Israel Ceron", "Ana Cecilia Castro", "Carolina Rodriguez.","Ulises Cruz Miranda"]
+names = ["Lau", "Cecilia", "Caro", "Ulises"]
+completeNames = ["Laura Esquivel", "Ana Cecilia Castro", "Carolina Rodriguez.","Ulises Cruz Miranda"]
 password = [2222,3333,4444,5555]
 saldo = [5000,4000,3000,10000]
 numberUser = 0
@@ -96,8 +96,6 @@ def main():
         print ("-")*30
         main()
     
-
-
 
 #Log
 def userLog():
