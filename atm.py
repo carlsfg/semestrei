@@ -22,13 +22,14 @@ numberUser = 0
 def displayMenu():
     print ("-")*50
     print ("\tATM Banco del Emprendimiento")
+    print "\t*Recuerda no usar acentos*"
     print ("-")*50
     print now.strftime("Hoy es %A, %d, de %B de %Y y son las %H:%M")
     userLog()
 
 #Esta funcion es para terminar el programa
 def bye():
-    print "Adios. Gracias por usar el Banco del Emprendimiento"
+    print "\nAdios. Gracias por usar el Banco del Emprendimiento"
     print ("\n") * 3
     exit()
 
@@ -99,9 +100,9 @@ def depositar():
     if deposito%50 == 0 and deposito > 0:
         saldo = saldo + deposito
         print ("*")*50
-        print "OPERACION EXITOSA"
         print "Ingresa el efectivo..."
         progress()
+        print "OPERACION EXITOSA"
         print "Tu saldo se ha actualizado." 
         print "Saldo: $", saldo
         print ("*")*50
@@ -129,10 +130,7 @@ def main():
     elif selection == "3":
         depositar()
     elif selection == "4":
-        print "Gracias por usar el Banco Python. Adios."
-        print ("-")*50
-        print "\n"
-        exit()
+        bye()
     else:
         print ("/")*50
         print "ERROR." 
@@ -172,9 +170,6 @@ def userLog():
             userLog()
         elif again == "no":
             bye()
-
-
-
 
             
 #Code
