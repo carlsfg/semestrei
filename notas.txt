@@ -1,6 +1,7 @@
 Banco del Emprendimiento
 El siguiente proyecto ha de realizarse en parejas.
-Una empresa nueva ha surgido para vincularse en el semestre i de Business Intelligence, pero en esta ocasión, y a sabiendas de su basto conocimiento en Python, ha pedido que los alumnos le ayuden a desarrollar un primer prototipo de software para un cajero automático.
+Una empresa nueva ha surgido para vincularse en el semestre i de Business Intelligence, 
+pero en esta ocasión, y a sabiendas de su basto conocimiento en Python, ha pedido que los alumnos le ayuden a desarrollar un primer prototipo de software para un cajero automático.
 Su misión es escribir un programa en Python que simule el menú al que un usuario accedería para poder retirar y depositar dinero de su cuenta bancaria.
 Para lo anterior, deberás crear algunos elementos obligatorios en tu programa:
 1. Variables para los nombres de los cuentahabientes que deberá almacenar los nombres de 4 usuarios que se han predefinido para probar tu aplicación: Álvaro, Cecilia, Caro y Ulises

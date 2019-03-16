@@ -3,8 +3,8 @@ import datetime
 now = datetime.datetime.now()
 
 #Variables
-names = ["Lau", "Cecilia", "Caro", "Ulises"]
-completeNames = ["Laura Esquivel", "Ana Cecilia Castro", "Carolina Rodriguez.","Ulises Cruz Miranda"]
+names = ["Richy", "Cecilia", "Caro", "Ulises"]
+completeNames = ["Ricardo Esquivel", "Ana Cecilia Castro", "Carolina Rodriguez.","Ulises Cruz Miranda"]
 password = [2222,3333,4444,5555]
 saldo = [5000,4000,3000,10000]
 numberUser = 0
@@ -42,37 +42,26 @@ def consultar():
 def retirar():
     global saldo
     print "Tu saldo es de: $", saldo
-    retiro = input("Ingresa la cantidad que deseas retirar: $")
-    if retiro < saldo:
+    retiro = int (input("Ingresa la cantidad que deseas retirar: $"))
+    if retiro < saldo and retiro > 0:
         saldo = saldo - retiro
         print "tu saldo es ahora de: $", saldo
         main()
     else:
-        print "Error debes ingresar una cantidad menor a", saldo
+        print "Error debes ingresar una cantidad menor a", saldo, "Pero menor a cero, tonto"
         retirar()
      
-
 #Esta funcion es para depositar dinero
 def depositar():
     global saldo
     print "Tu saldo es de: $", saldo
-    deposito = input("Ingresa la cantidad que deseas depositar: $")
+    deposito = int (input("Ingresa la cantidad que deseas depositar: $"))
     saldo = saldo + deposito
     print ("*")*30
     print "Operacion Exitosa"
     print "Tu saldo se ha actualizado a: $", saldo
     print ("*")*30
     main()
-
-#Esta funcion es para transferir dinero
-def transferir():
-    print names
-    personaTransferir = raw_input("Elige a la persona que deseas transferir:")
-    numberUser = names.index(personaTransferir)
-    print "Tu saldo es de: $", saldo
-    cantidadTransferir = input("Ingresa la cantidad a transferir:")
-    print "Tu saldo es de: $", saldo - cantidadTransferir
-    print "Enviaste a:", personaTransferir, "$", cantidadTransferir
 
 #Main Menu
 def main():
@@ -96,7 +85,6 @@ def main():
         print ("-")*30
         main()
     
-
 #Log
 def userLog():
     global numberUser
@@ -121,7 +109,6 @@ def userLog():
         elif again == "n":
             bye()
             
-
 #Code
 displayMenu()
 
